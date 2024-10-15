@@ -19,4 +19,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/startscreen.png
-    - assets/mainscreen.png
+    - assets/T2.png
+    - assets/chickcupcake.png
+    - assets/bg_mainscreen.png
+    - assets/topcard.png
+    - assets/Burger_3D.png
+    - assets/catcupcake.png
+    - assets/icecream.png
