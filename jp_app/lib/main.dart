@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jp_app/features/mainscreen/main_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,29 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Stack(
-          children: [
-            // Erstes Bild mit Transparenz
-            Positioned.fill(
-              child: Opacity(
-                opacity: 0.8, // Transparenzwert für das erste Bild
-                child: Image.asset(
-                  "assets/startscreen.png",
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            // Zweites Bild direkt darüber ohne Transparenz
-            Positioned.fill(
-              child: Image.asset(
-                "assets/mainscreen.png",
-                fit: BoxFit.cover,
-              ),
-            ),
-          ],
-        ),
+        body: MainScreen(),
       ),
     );
   }
