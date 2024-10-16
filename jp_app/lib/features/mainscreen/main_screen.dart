@@ -81,7 +81,7 @@ class MainScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                       SizedBox(height: 40),
-                      MyButton(),
+                      MyButton(text: "Order Now"),
                     ],
                   ),
                 ),

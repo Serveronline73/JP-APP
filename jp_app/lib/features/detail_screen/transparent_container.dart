@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
                   children: [
                     // Hintergrundbild
                     Container(
-                      width: double.infinity,
+                      width: 350,
                       height: double.infinity,
                       child: Image.asset(
                         'assets/startscreen.png',
@@ -53,7 +53,8 @@ class MyApp extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 40, vertical: 8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -105,7 +106,7 @@ class TransparentContainer extends StatelessWidget {
           sigmaY: 10.0,
         ),
         child: Container(
-          width: 300,
+          width: 370,
           height: 380,
           decoration: BoxDecoration(
             color: Colors.black.withOpacity(0.1),
@@ -132,9 +133,9 @@ class TransparentContainer extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  "   Cat Cupcake Neu im Sortiment\n   zergeht auf der Zunge und ist ein\n   echter Leckerbissen",
+                  "Cat Cupcake Neu im Sortiment\nzergeht auf der Zunge und ist ein echter Leckerbissen",
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: FontWeight.normal,
                     color: Colors.white70,
                   ),
@@ -175,13 +176,15 @@ class TransparentContainer extends StatelessWidget {
                         SizedBox(height: 5),
                         Row(
                           children: [
-                            Icon(Icons.abc, color: Colors.white, size: 20),
+                            Icon(Icons.food_bank_rounded,
+                                color: Colors.white, size: 20),
                             SizedBox(width: 5),
-                            Icon(Icons.star, color: Colors.white, size: 20),
+                            Icon(Icons.restaurant_menu,
+                                color: Colors.white, size: 20),
                             SizedBox(width: 5),
-                            Icon(Icons.star, color: Colors.white, size: 20),
+                            Icon(Icons.eco, color: Colors.white, size: 20),
                             SizedBox(width: 5),
-                            Icon(Icons.star, color: Colors.white, size: 20),
+                            Icon(Icons.casino, color: Colors.white, size: 20),
                           ],
                         ),
                       ],
@@ -205,6 +208,11 @@ class TransparentContainer extends StatelessWidget {
                             Icon(Icons.star, color: Colors.white, size: 20),
                             SizedBox(width: 5),
                             Icon(Icons.star, color: Colors.grey, size: 20),
+                            SizedBox(width: 5),
+                            Text(
+                              "4.0",
+                              style: TextStyle(color: Colors.white70),
+                            ),
                           ],
                         ),
                       ],
@@ -216,7 +224,6 @@ class TransparentContainer extends StatelessWidget {
           ),
         ),
       ),
-    
     );
   }
 }

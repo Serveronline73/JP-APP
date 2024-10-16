@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jp_app/features/home_screen/sale_list.dart';
 import 'package:jp_app/features/home_screen/top_card.dart';
@@ -60,7 +59,11 @@ class HomeScreenState extends State<HomeScreen> {
               left: 0,
               right: 0,
               child: Center(
-                child: TopCard(),
+                child: TopCard(
+                  title: 'Angis Burger',
+                  price: '8.99',
+                  image: 'assets/catcupcake.png',
+                ),
               ),
             ),
             const Positioned(

@@ -4,7 +4,10 @@ import 'package:jp_app/features/home_screen/home_screen.dart';
 class MyButton extends StatelessWidget {
   const MyButton({
     super.key,
+    required this.text,
   });
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +29,9 @@ class MyButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
-        child: const Text(
-          "Order Now",
-          style: TextStyle(
+        child: Text(
+          text,
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
             fontWeight: FontWeight.bold,
