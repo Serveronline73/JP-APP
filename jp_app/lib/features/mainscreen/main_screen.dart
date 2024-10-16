@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:jp_app/features/widget/my_button.dart';
+import 'package:jp_app/features/mainscreen/my_button.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jp_app/home_screen.dart';
+import 'package:jp_app/features/home_screen/home_screen.dart';
 
 class MyButton extends StatelessWidget {
   const MyButton({
